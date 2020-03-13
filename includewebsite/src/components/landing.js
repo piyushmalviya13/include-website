@@ -1,9 +1,8 @@
-import React, { Image, Transformation } from "react";
+import React from "react";
 import "./landing.css";
 import logo from "../assets/background.jpg";
 import Particles from "react-particles-js";
 import styled, { keyframes } from "styled-components";
-import Container from "react-bootstrap/Container";
 import FadeIn from "react-animations/lib/fade-in";
 import Typing from "react-typing-animation";
 const FadeInAnimation = keyframes`${FadeIn}`;
@@ -22,6 +21,20 @@ export default function Landing() {
                 enable: true,
                 color: "#3CA9D1",
                 blur: 5
+              }
+            },
+            number: {
+              value: 50
+            },
+            size: {
+              value: 3
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse"
               }
             }
           }
