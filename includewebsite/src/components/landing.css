@@ -1,23 +1,12 @@
-.first-half {
-  background-color: #252827;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
-  height: "inherit";
-  overflow-y: "auto";
-  position: "relative";
-}
-
 .line {
   position: absolute;
   margin-top: auto;
-
   padding-bottom: 1%;
   text-align: center;
   width: 100%;
   font-style: oblique;
   color: white;
-  top: 20em;
+  top: 55%;
   font-weight: 600;
 }
 
@@ -31,6 +20,26 @@
   font-style: oblique;
   font-family: Palatino;
   color: white;
-  top: 4em;
+  top: 35%;
   font-size: 580%;
+}
+
+@media (max-width: 1400px) {
+  .heading {
+    top: 25%;
+  }
+  .line {
+    top: 45%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .line {
+    top: 30%;
+    font-size: 100%;
+  }
+  .heading {
+    top: 20%;
+    font-size: 380%;
+  }
 }
