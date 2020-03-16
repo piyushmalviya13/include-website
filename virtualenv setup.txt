@@ -1,0 +1,26 @@
+>conda create --name include python=3.7
+
+>conda activate include
+
+>conda install -c conda-forge django
+
+>conda install -c conda-forge djangorestframework
+
+>django-admin startproject rest_api
+
+>cd rest_api
+
+>python manage.py startapp restapp
+
+-------------------------------------------------------------------------------------
+Add rest_framework and the app name to the installed apps.
+
+ INSTALLED_APPS = (
+     ...
+     'rest_framework',
+     'restapp')
+--------------------------------------------------------------------------------------
+
+>python manage.py makemigrations
+
+>python manage.py migrate
