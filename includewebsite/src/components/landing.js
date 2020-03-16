@@ -1,8 +1,7 @@
-import React, { Image, Transformation } from "react";
+import React from "react";
 import "./landing.css";
 import logo from "../assets/background.jpg";
 import Particles from "react-particles-js";
-import TypeIt from "typeit-react";
 import styled, { keyframes } from "styled-components";
 import FadeIn from "react-animations/lib/fade-in";
 import Typing from "react-typing-animation";
@@ -23,6 +22,20 @@ export default function Landing() {
                 color: "#3CA9D1",
                 blur: 5
               }
+            },
+            number: {
+              value: 50
+            },
+            size: {
+              value: 3
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse"
+              }
             }
           }
         }}
@@ -33,6 +46,7 @@ export default function Landing() {
           backgroundSize: "cover"
         }}
       />
+
       <FadeInDiv>
         <h1 className="heading">#include</h1>
       </FadeInDiv>
